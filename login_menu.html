@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nikitos Popovych">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link rel="icon" type="image/x-icon" href="images/gaya.ico">
+    <title>Login - Gaya</title>
+</head>
+<body>
+  
+  <div id="overlay"></div>
+
+  <div class="mainheader">
+      <div id="openmenu">
+        <span class="material-symbols-outlined" style="font-size:30px;cursor: pointer;" onclick="openBar()"> menu </span>
+      </div>
+
+      <a href="index.html">
+        <img class="logo" src="images/gaya2.png" width="100px" height="70px" alt="logo">
+      </a>
+      
+      <div class="search">
+        <form>
+          <span class="material-symbols-outlined">search</span>
+          <input name="search" id="search" placeholder="Otsi tooteid ja poode">
+        </form>
+      </div>
+
+      <a href="login_menu.html" class="account_circle">
+        <span class="material-symbols-outlined"> account_circle </span>
+      </a>
+  </div>
+
+  <div id="SlideBar" class="slidemenu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">
+        <span class="material-symbols-outlined"> menu_open </span>
+      </a>
+      <a href="index.html">Home</a>
+      <a href="">My orders</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+  </div>  
+
+  <div id="site" class="container2">
+      <div class="header">
+          <h2>Welcome to Gaya</h2>
+      </div>
+
+      <div class="maincontent login-menu-content">
+          <div class="login-menu-card">
+              <p>Please sign in to your account or create a new profile to track orders and save your wishlist.</p>
+              
+              <div class="login-menu-actions">
+                  <a href="login.html" class="auth-btn btn-signin">Sign In</a>
+                  <a href="registration.html" class="auth-btn btn-signup">Create Account</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

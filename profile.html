@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nikitos Popovych">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="icon" type="image/x-icon" href="images/gaya.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <title>Profile</title>
+</head>
+<body>
+
+  <div id="overlay"></div>
+
+    <div class="mainheader">
+      
+
+      <div id="openmenu">
+        <span class="material-symbols-outlined" style="font-size:30px;cursor: pointer;" onclick="openBar()"> menu </span>
+      </div>
+
+      
+        <a href="index.html">
+          <img class="logo" src="images/gaya2.png" width="100px" height="70px" alt="logo">
+        </a>
+        <div class="search">
+          <form>
+            <span class="material-symbols-outlined">search</span>
+            <input name="search" id="search" placeholder="Otsi tooteid ja poode">
+          </form>
+        </div>
+
+        <a href="profile.html" class="account_circle">
+    <span class="material-symbols-outlined"> account_circle </span>
+</a>
+
+    </div>
+
+
+
+
+   <div id="SlideBar" class="slidemenu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">
+        <span class="material-symbols-outlined"> menu_open </span>
+      </a>
+      <a href="index.html">Home</a>
+      <a href="profile.html" id="menuProfile">Profile</a>
+      <a href="">My orders</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </div>  
+  
+
+
+    <div class="profile">
+        <div class="profile-block">
+            <div class="profile-avatar">
+                <span class="material-symbols-outlined" style="font-size:52px;">account_circle</span>
+            </div>
+            <div class="profile-info">
+                <h2>Nikitos Popovych</h2>
+                <p>nikita.popovych@ivkhk.ee</p>
+                <a href="login_menu.html" id="logoutBtn" class="btn-logout">Log out</a>
+                    Log out
+                </a>
+            </div>
+        </div>
+        <div class="orders-block">
+            <h3>Order History</h3>
+            <div class="order-item">
+                <div class="order-left">
+                    <span class="order-name">Black Jeans : M</span>
+                    <span class="order-date">12 May 2025</span>
+                </div>
+                <div class="order-right">
+                    <span class="order-price">€39.99</span>
+                    <span class="order-status status-delivered">Delivered</span>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-left">
+                    <span class="order-name">White Hoodie : L</span>
+                    <span class="order-date">28 Apr 2026</span>
+                </div>
+                <div class="order-right">
+                    <span class="order-price">€54.99</span>
+                    <span class="order-status status-shipped">Shipped</span>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-left">
+                    <span class="order-name">Nike Shorts : S</span>
+                    <span class="order-date">3 Jun 2026</span>
+                </div>
+                <div class="order-right">
+                    <span class="order-price">€24.99</span>
+                    <span class="order-status status-processing">Processing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+  <script src="script.js"></script>
+</body>
+
+    
+</html>

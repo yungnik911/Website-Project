@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nikitos Popovych">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+
+    <link rel="icon" type="image/x-icon" href="images/gaya.ico">
+  
+    <title>Login</title>
+</head>
+<body>
+
+  <div id="overlay"></div>
+  <div id="site"></div>
+
+
+    <div class="mainheader">
+      
+
+      <div id="openmenu">
+        <span class="material-symbols-outlined" style="font-size:30px;cursor: pointer;" onclick="openBar()"> menu </span>
+      </div>
+
+      
+        <a href="index.html">
+          <img class="logo" src="images/gaya2.png" width="100px" height="70px" alt="logo">
+        </a>
+        <div class="search">
+          <form>
+            <span class="material-symbols-outlined">search</span>
+            <input name="search" id="search" placeholder="Otsi tooteid ja poode">
+          </form>
+        </div>
+        
+
+        <a href="profile.html" class="account_circle">
+    <span class="material-symbols-outlined"> account_circle </span>
+</a>
+
+    </div>
+
+  <div id="SlideBar" class="slidemenu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">
+        <span class="material-symbols-outlined"> menu_open </span>
+      </a>
+      <a href="index.html">Home</a>
+      <a href="profile.html" id="menuProfile">Profile</a>
+      <a href="">My orders</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </div>  
+
+   <div id="Enter" class="loginent">
+        <form id="loginForm">
+            <input type="text" id="loginName" placeholder="Name" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+<h2 style="text-align:center; margin-bottom:20px; font-family: 'Pacifico', cursive;">Login</h2>
+
+  
+    
+
+  <script src="script.js"></script>
+</body>
+
+    
+</html>
